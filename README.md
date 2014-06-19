@@ -6,9 +6,6 @@
 
 *pQuery is a work in progress. Forks/Pulls Welcome.* 
 
---- 
-
-
 
 This module is meant to create a variable that we can use jQuery-like syntax to do jQuery-like
 manipulations on a website.
@@ -26,12 +23,12 @@ manipulations on a website.
 
     $pQuery.Navigate("http://github.com/misterGF")
 
---- 
+
 
 ## USAGE
 *Types can be button, div, form, textField, link or radioButton.*
 
----
+
 
 #### Selecting!
     
@@ -42,7 +39,7 @@ manipulations on a website.
     $pQuery.Select(".button") //By Class
 
 
---- 
+
 
 
 #### Getting Text!
@@ -52,7 +49,7 @@ manipulations on a website.
     
     $pQuery.getText(".button") //By Class
 
---- 
+
 
 #### Setting Text!
 *Set the text value based on your selector*
@@ -63,7 +60,7 @@ manipulations on a website.
     
     $pQuery.setText(".button","My Modified Text") //By Class
 
---- 
+
 
 #### Clicking!
 *Currently Supporting buttons and links.*
@@ -72,7 +69,7 @@ manipulations on a website.
     
     $pQuery.click(".buttons") //By Class
 
---- 
+
 
 #### Submit!
 *Submit a form.*
@@ -81,5 +78,4 @@ manipulations on a website.
     
     $pQuery.submit(".forms") //By Class
 
---- 
 
