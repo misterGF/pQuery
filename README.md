@@ -36,7 +36,7 @@ manipulations on a website.
 
 
 ## USAGE
-*Types can be button, div, form, textField, link or radioButton.*
+*Types can be button, div, form, input or a.*
 
 
 
