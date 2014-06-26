@@ -28,6 +28,11 @@ manipulations on a website.
 
 	$pQuery.Init()
 
+#### Set headers for basic authentication
+*Only needed if site is behind basic authentication.*
+
+    $pQuery.setCredentials("username:password")
+	
 #### Navigate to the site specified
 
 
@@ -37,6 +42,12 @@ manipulations on a website.
 
 ## USAGE
 *Types can be button, div, form, input or a.*
+
+
+#### Viewing HTML of current page!
+    
+    $pQuery.getHTML()
+
 
 
 
