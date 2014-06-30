@@ -13,8 +13,8 @@ manipulations on a website.
 ## Install
 
 1. Download repository
-2. Unzip and rename pQuery-master folder to pQuery
-3. Move folder to C:\Windows\System32\WindowsPowerShell\v1.0\Modules
+2. Unzip
+3. Move pQuery folder to C:\Windows\System32\WindowsPowerShell\v1.0\Modules
 3. Open up PowerShell and import the module
 	* Import-Module pQuery
 
@@ -73,13 +73,13 @@ manipulations on a website.
 
 
 #### Setting Text!
-*Set the text value based on your selector*
+*Set the text value based on your selector. Optionally return boolean value*
 
     $pQuery.setText("button","My Modified Text") #By Type
     
     $pQuery.setText("#button","My Modified Text") #By ID
     
-    $pQuery.setText(".button","My Modified Text") #By Class
+    $pQuery.setText(".button","My Modified Text", $true) #By Class and optionally return $true or $false. Useful for unit testing.
 
 
 
@@ -88,15 +88,11 @@ manipulations on a website.
 
     $pQuery.click("#greenBtn") #By ID
     
-    $pQuery.click(".buttons") #By Class
+    $pQuery.click(".buttons", $true) #By Class and optionally return $true or $false. Useful for unit testing.
 
-
-
-#### Submit!
+#### Submitting!
 *Submit a form.*
 
-    $pQuery.submit("#myForm") #By ID
+    $pQuery.submit("#formBtn") #By ID
     
-    $pQuery.submit(".forms") #By Class
-
-
+    $pQuery.submit(".formBtn", $true) #By Class and optionally return $true or $false. Useful for unit testing.
