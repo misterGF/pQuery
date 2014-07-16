@@ -13,8 +13,8 @@ manipulations on a website.
 ## Install
 
 1. Download repository
-2. Unzip
-3. Move pQuery folder to C:\Windows\System32\WindowsPowerShell\v1.0\Modules
+2. Unzip. Unlock .dll files in pQuery directory. (Right click file->Properties->Unblock->OK).
+3. Move pQuery folder to %UserProfile%\Documents\WindowsPowerShell\Modules
 3. Open up PowerShell and import the module
 	* Import-Module pQuery
 
